@@ -1,9 +1,11 @@
 <template lang="html">
-
   <section class="portfolio">
-    <h1>portfolio Component</h1>
+      <div id="projects"> <h1>yomismo</h1> </div> 
+      <div id="whoami"> <h1>Fotomia</h1> </div>
+      <div id="skills"> <h1>Fotomia</h1> </div>
+      <div id="work"> <h1>Fotomia</h1> </div>
+      <div id="education"> <h1>Fotomia</h1> </div>
   </section>
-
 </template>
 
 <script lang="js">
@@ -33,4 +35,25 @@
 
 <style scoped>
 /*https://zyro.com/preview/eren */
+
+#projects{
+  height:100vh;
+  background-color:lavender;
+}
+#whoami{
+  height:100vh;
+  background-color:khaki;
+}
+#skills{
+  height:100vh;
+  background-color:lightcoral;
+}
+#work{
+  height:100vh;
+  background-color:lightslategrey;
+}
+#education{
+  height:100vh;
+  background-color:moccasin;
+}
 </style>

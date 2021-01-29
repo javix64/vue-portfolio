@@ -5,7 +5,7 @@
         "date of birth": " 04/07/1991",
         "nationallity": "Spanish",
         "gender":"Male",
-        "photo":""
+        "photo":"/img/portfolioPhoto.jpg"
     },
     "contact":{
         "direccion": "Calle A",
@@ -83,6 +83,12 @@
         {"name":"",
         "dateStart":"",
         "dateEnd":""
+        }
+    ],
+    "projects":[
+        {"name":"",
+        "url":"",
+        "description":""
         }
     ]
 }
