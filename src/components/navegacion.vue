@@ -6,8 +6,8 @@
         <b-navbar-toggle target="nav-collapse" dropup="true"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav >
           <b-navbar-nav class="ml-auto my-6 nav-pills">
-            <a class="nav-link mr-4 mt-2" href="#projects"><i class="far fa-folder-open"></i> <i>projects</i></a>
             <a class="nav-link mr-4 mt-2" href="#whoami"><i class="far fa-address-card"></i> <i>whoami</i></a>
+            <a class="nav-link mr-4 mt-2" href="#projects"><i class="far fa-folder-open"></i> <i>projects</i></a>
             <a class="nav-link mr-4 mt-2" href="#skills"><i class="fas fa-code"></i> <i>skills</i></a>
             <a class="nav-link mr-4 mt-2" href="#work"><i class="fas fa-business-time"></i> <i>workExperience</i></a>
             <a class="nav-link mr-4 mt-2" href="#education"><i class="fas fa-graduation-cap"></i> <i>education</i></a>
@@ -36,9 +36,7 @@
       }
     },
     methods: {
-      openMenu(){
-        document.getElementById('navbarTogglerDemo01').classList.remove('collapse navbar-collapse');
-      }
+      
     },
     computed: {
 
@@ -51,8 +49,17 @@
 <style scoped>
     /*COLORES */
 .navbar{
-  background: rgb(255,255,255) !important;
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(84,106,123,0.8841737378545168) 27%) !important;
+  background-color: #546a7b !important;
+}
+.nav-link{
+  color:white !important;
+}
+.navbar-brand{
+  font-size:2rem;
+  color: white !important;
+  }
+.navbar{
+  background-color: #546a7b !important;
 }
 .nav-link{
   color:white !important;
@@ -67,6 +74,13 @@
 .nav-link.active{
   /**/background-color:inherit !important;
   border-bottom: 6px #3A4955 solid;
+  border-radius: 3px;
+  background-color:#425461 !important;
+}
+.nav-link.active{
+  /**/background-color:inherit !important;
+  border-bottom: 6px #3A4955 solid;
+  border-radius: 3px;
 }
 /* FIN COLORES */
 /* Efectos */
