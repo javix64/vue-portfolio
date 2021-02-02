@@ -16,8 +16,6 @@ export default {
   },
   data(){
     return{
-      url:'/json/info.json',
-      data:null,
     }
   },
   computed: {

@@ -8,14 +8,14 @@
             "photo":"/img/portfolioPhoto.jpg"
         },
         "contact":{
-            "direccion": "Calle A",
-            "email": "a@pa.com",
-            "phone" : 666112233
+            "direccion": "Granada",
+            "email": "jav1.x64@gmail.com"
         },
         "websites":{
             "github":"https://github.com/javix64/",
             "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
-            "twitter":"https://twitter.com/Javix64"
+            "twitter":"https://twitter.com/Javix64",
+            "twitch":"https://www.twitch.tv/javix64"
         },
         "languages":{
             "motherLanguage":"Spanish",
@@ -85,9 +85,50 @@
             }
         ],
         "projects":[
-            {"name":"",
-            "url":"",
-            "description":""
+            {"name":"Jquery LandingPage",
+            "img":"/img/projects/project1.png",
+            "url":"https://github.com/javix64/landingPage-Jquery",
+            "description":"LandingPage made with Jquery"
+            },
+            {"name":"Quote post in ForoCoches",
+            "img":"/img/projects/project2.png",
+            "url":"https://github.com/javix64/Mencionar-post-forocoches",
+            "description":"Script made in python to quote all users in a post"
+            },
+            {"name":"API project - FoodJS",
+            "img":"/img/projects/project3.png",
+            "url":"https://github.com/javix64/Food-JS",
+            "description":"Project to use fetch with Food Facts API"
+            },
+            {"name":"Download files from Telegram",
+            "img":"/img/projects/project4.png",
+            "url":"https://github.com/javix64/Download-files-from-Telegram",
+            "description":"Easy script (not mine) that it can allow you to download files from a group or channel"
+            },
+            {"name":"Web scraping for Milanuncios.com",
+            "img":"/img/projects/project5.png",
+            "url":"https://github.com/javix64/Scraping-Milanuncios",
+            "description":"Web scraping made in Python that use selenium for category 'smartphone'"
+            },
+            {"name":"Web scraping for Vinted",
+            "img":"/img/projects/project6.png",
+            "url":"https://github.com/javix64/web_scraping_vinted2.0",
+            "description":"Web scraping made in Python that scrap JSON in vinted. ey @vinted you have a security breach in your website"
+            },
+            {"name":"Generate Wordpress script (Unfinished)",
+            "img":"/img/projects/project7.png",
+            "url":"https://github.com/javix64/generate-Wordpress-script",
+            "description":"Script for auto Install WordPress This script create a new folder where install wordpress, create the DDBB and after configure wp-config.php with your DDBB credentials."
+            },
+            {"name":"Generate text RGPD",
+            "img":"/img/projects/project8.png",
+            "url":"https://github.com/javix64/GenerateRGPD",
+            "description":"this is a RGPD generator for privacy policiy, legal disclaimer, and cookie policy."
+            },
+            {"name":"All my repositories",
+            "img":"/img/projects/project9.png",
+            "url":"https://github.com/javix64?tab=repositories",
+            "description":"All my repositories"
             }
         ]
     },
@@ -100,14 +141,15 @@
             "photo":"/img/portfolioPhoto.jpg"
         },
         "contact":{
-            "direccion": "Calle A",
-            "email": "a@pa.com",
+            "direccion": "Granada",
+            "email": "jav1.x64@gmail.com",
             "phone" : 666112233
         },
         "websites":{
             "github":"https://github.com/javix64/",
             "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
-            "twitter":"https://twitter.com/Javix64"
+            "twitter":"https://twitter.com/Javix64",
+            "twitch":"https://www.twitch.tv/javix64"
         },
         "languages":{
             "motherLanguage":"Español",
@@ -177,10 +219,51 @@
             }
         ],
         "projects":[
-            {"name":"",
-            "url":"",
-            "description":""
-            }
+            {"name":"Jquery LandingPage",
+                "img":"/img/projects/project1.png",
+                "url":"https://github.com/javix64/landingPage-Jquery",
+                "description":"LandingPage hecha con Jquery"
+                },
+                {"name":"Citar usuarios post en ForoCoches",
+                "img":"/img/projects/project2.png",
+                "url":"https://github.com/javix64/Mencionar-post-forocoches",
+                "description":"Script realizado en python para citar a todos los usuarios de un post"
+                },
+                {"name":"API project - FoodJS",
+                "img":"/img/projects/project3.png",
+                "url":"https://github.com/javix64/Food-JS",
+                "description":"Proyecto para hacer peticiones fetch a Food Facts API"
+                },
+                {"name":"Descargar archivos de telegram",
+                "img":"/img/projects/project4.png",
+                "url":"https://github.com/javix64/Download-files-from-Telegram",
+                "description":"Te permite descargar todos los archivos de un grupo o canal"
+                },
+                {"name":"Web scraping para Milanuncios.com",
+                "img":"/img/projects/project5.png",
+                "url":"https://github.com/javix64/Scraping-Milanuncios",
+                "description":"Web scraping hecho en python que scrapea la categoria 'smartphone'"
+                },
+                {"name":"Web scraping para Vinted",
+                "img":"/img/projects/project6.png",
+                "url":"https://github.com/javix64/web_scraping_vinted2.0",
+                "description":"Web scraping hecho en python que scrapea el JSON de vinted. Ey @vinted, tienes una brecha de seguridad en tu web."
+                },
+                {"name":"Generador de Wordpress script (Sin acabar)",
+                "img":"/img/projects/project7.png",
+                "url":"https://github.com/javix64/generate-Wordpress-script",
+                "description":"Script que te permite crear carpetas y configurar wp-config de wordpress"
+                },
+                {"name":"Generador de textos RGPD",
+                "img":"/img/projects/project8.png",
+                "url":"https://github.com/javix64/GenerateRGPD",
+                "description":"Generador de políticas de cookies, aviso legal y políticas de privacidad"
+                },
+                {"name":"Mis repositorios",
+                "img":"/img/projects/project9.png",
+                "url":"https://github.com/javix64?tab=repositories",
+                "description":"Link para verlos"
+                }
         ]
         },
     "tagEng":{
