@@ -10,11 +10,14 @@ import navegacion from './components/navegacion.vue'
 import portfolio from './components/portfolio.vue'
 export default {
   name: 'App',
+  created(){
+  },
   mounted(){
   },
   data(){
     return{
-
+      url:'/json/info.json',
+      data:null,
     }
   },
   computed: {

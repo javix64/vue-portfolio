@@ -1,6 +1,5 @@
 <template lang="html">
   <section class="navegacion" v-b-scrollspy>
-
       <b-navbar toggleable="lg" type="dark" variant="info" fixed="bottom">
         <b-navbar-brand href="#">Javier</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse" dropup="true"></b-navbar-toggle>
@@ -14,29 +13,21 @@
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
-
-
-
-    
-        
-
   </section>
 </template>
 
 <script lang="js">
-  export default  {
+  export default {
     name: 'navegacion',
     props: [],
     mounted () {
-
+      
     },
     data () {
       return {
-
       }
     },
     methods: {
-      
     },
     computed: {
 
@@ -72,7 +63,7 @@
   background-color:#425461 !important;
 }
 .nav-link.active{
-  /**/background-color:inherit !important;
+  background-color:inherit !important;
   border-bottom: 6px #3A4955 solid;
   border-radius: 3px;
   background-color:#425461 !important;

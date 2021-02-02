@@ -14,9 +14,8 @@
         },
         "websites":{
             "github":"https://github.com/javix64/",
-            "linkedin":"",
-            "twitter":"https://twitter.com/Javix64",
-            "personalBlog":""
+            "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
+            "twitter":"https://twitter.com/Javix64"
         },
         "languages":{
             "motherLanguage":"Spanish",
@@ -96,9 +95,8 @@
         "aboutMe":{
             "nombre": "Javier",
             "apellidos": "H.M.",
-            "date of birth": " 04/07/1991",
-            "nationallity": "Espa;a",
-            "gender":"Male",
+            "dateBirth": " 04/07/1991",
+            "nationallity": "España",
             "photo":"/img/portfolioPhoto.jpg"
         },
         "contact":{
@@ -108,20 +106,19 @@
         },
         "websites":{
             "github":"https://github.com/javix64/",
-            "linkedin":"",
-            "twitter":"https://twitter.com/Javix64",
-            "personalBlog":""
+            "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
+            "twitter":"https://twitter.com/Javix64"
         },
         "languages":{
-            "motherLanguage":"Espa;ol",
-            "otherLanguage":"Ingles"
+            "motherLanguage":"Español",
+            "otherLanguage":"Inglés"
         },
         "digitalSkills":[
             "Python",
             "Big Data",
             "Web Scraping",
-            "Analisis y minado de datos",
-            "Desarrollo web de HTML5, CSS3 y JS",
+            "Análisis y minado de datos",
+            "Desarrollo web HTML5, CSS3 y JS",
             "Wordpress",
             "WooCommerce",
             "Yoast SEO",
@@ -133,7 +130,191 @@
         ],
         "otherSkills":[
             "Buen comunicador",
-            "empatico",
+            "empático",
+            "guapo"
+        ],
+        "workExperience":[
+            {"work":"a",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""},
+    
+            {"work":"b",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""},
+    
+            {"work":"c",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""},
+    
+            {"work":"d",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""}
+        ],
+        "education":[
+            {"name":"",
+            "dateStart":"",
+            "dateEnd":""
+            },
+            {"name":"",
+            "dateStart":"",
+            "dateEnd":""
+            },
+            {"name":"",
+            "dateStart":"",
+            "dateEnd":""
+            }
+        ],
+        "projects":[
+            {"name":"",
+            "url":"",
+            "description":""
+            }
+        ]
+        },
+    "tagEng":{
+        "aboutMe":{
+            "nombre": "Name",
+            "apellidos": "Surname",
+            "dateBirth": " 04/07/1991",
+            "nationallity": "Nationallity",
+            "photo":"/img/portfolioPhoto.jpg"
+        },
+        "contact":{
+            "direccion": "Calle A",
+            "email": "a@pa.com",
+            "phone" : 666112233
+        },
+        "websites":{
+            "github":"https://github.com/javix64/",
+            "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
+            "twitter":"https://twitter.com/Javix64"
+        },
+        "languages":{
+            "motherLanguage":"Spanish",
+            "otherLanguage":"English"
+        },
+        "digitalSkills":[
+            "Python",
+            "Big Data",
+            "Web Scraping",
+            "Data analytics and data mining",
+            "Web Development HTML 5 CSS JavaScript",
+            "Wordpress",
+            "WooCommerce",
+            "Yoast SEO",
+            "SEO Copywriting",
+            "Arch Linux",
+            "Arduino, ESP8266 and RaspBerry Pi",
+            "3D Printing",
+            "NFC"
+        ],
+        "otherSkills":[
+            "Good listener and communicator",
+            "empathic",
+            "handsome"
+        ],
+        "workExperience":[
+            {"work":"a",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""},
+
+            {"work":"b",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""},
+
+            {"work":"c",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""},
+
+            {"work":"d",
+            "position":"",
+            "dateStart":"",
+            "dateEnd":"",
+            "description":"",
+            "place":""}
+        ],
+        "education":[
+            {"name":"",
+            "dateStart":"",
+            "dateEnd":""
+            },
+            {"name":"",
+            "dateStart":"",
+            "dateEnd":""
+            },
+            {"name":"",
+            "dateStart":"",
+            "dateEnd":""
+            }
+        ],
+        "projects":[
+            {"name":"",
+            "url":"",
+            "description":""
+            }
+        ]
+    },    
+    "tagEsp":{
+        "aboutMe":{
+            "nombre": "Javier",
+            "apellidos": "H.M.",
+            "dateBirth": " 04/07/1991",
+            "nationallity": "España",
+            "photo":"/img/portfolioPhoto.jpg"
+        },
+        "contact":{
+            "direccion": "Calle A",
+            "email": "a@pa.com",
+            "phone" : 666112233
+        },
+        "websites":{
+            "github":"https://github.com/javix64/",
+            "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
+            "twitter":"https://twitter.com/Javix64"
+        },
+        "languages":{
+            "motherLanguage":"Español",
+            "otherLanguage":"Inglés"
+        },
+        "digitalSkills":[
+            "Python",
+            "Big Data",
+            "Web Scraping",
+            "Análisis y minado de datos",
+            "Desarrollo web HTML5, CSS3 y JS",
+            "Wordpress",
+            "WooCommerce",
+            "Yoast SEO",
+            "SEO Copywriting",
+            "Arch Linux",
+            "Arduino, ESP8266 and RaspBerry Pi",
+            "3D Printing",
+            "NFC"
+        ],
+        "otherSkills":[
+            "Buen comunicador",
+            "empático",
             "guapo"
         ],
         "workExperience":[

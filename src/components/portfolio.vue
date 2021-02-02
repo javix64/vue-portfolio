@@ -1,24 +1,27 @@
 <template lang="html">
   <section class="portfolio">
-    
+      <div class="changeMe fixed-top ml-auto" v-on:click="changeLang">
+        <b-form-checkbox v-model="lang" @change="changeLang" class="ml-auto mr-3" name="check-button" switch size="lg">
+          <b>{{flagLang}}</b>
+        </b-form-checkbox>
+      </div>
       <div id="whoami">
-        
-        <b-button v-on:click="changeLan">Change Lan</b-button>
+        <div  fixed="bottom" toggleable="lg" type="dark" variant="info"> 
+        </div>
         <b-container fluid="lg">
         <b-row>
-          <b-col>
-            <img v-bind:src="currentLan.aboutMe.photo" class="img-fluid photo" >
-            </b-col>
           <b-col class="datosPersonales">
-            <h1 class="align-middle">{{currentLan.aboutMe.nombre}} {{currentLan.aboutMe.apellidos}} </h1>
-            <h4>Birthday: {{currentLan.aboutMe.dateBirth}} </h4>
-            <h4>Where: {{currentLan.aboutMe.nationallity}}</h4>
-            <h4>Mother Language: {{currentLan.languages.motherLanguage}}</h4>
-            <h4>Other Language: {{currentLan.languages.otherLanguage}}</h4>
+            <img v-bind:src="currentLang.aboutMe.photo" class="img-fluid photo">
+          </b-col>
+          <b-col class="datosPersonales">
+            <h1 class="align-middle">{{currentLang.aboutMe.nombre}} {{currentLang.aboutMe.apellidos}} </h1>
+            <h4>Birthday: {{currentLang.aboutMe.dateBirth}} </h4>
+            <h4>Where: {{currentLang.aboutMe.nationallity}}</h4>
+            <h4>Mother Language: {{currentLang.languages.motherLanguage}}</h4>
+            <h4>Other Language: {{currentLang.languages.otherLanguage}}</h4>
           </b-col>
         </b-row>
         <b-row>
-           
         </b-row>
       </b-container>
       </div>
@@ -36,28 +39,32 @@
     props: [],
     async mounted(){
     {this.datos = await axios.get(this.url)}
-    this.currentLan=this.datos.data.eng;
+    this.currentLang=this.datos.data.eng;
+    
     },
     data () {
       return {
         url:'/json/info.json',
         datos:null,
         lang:true,
-        currentLan:null,
+        currentLang:null,
+        flagLang:"🇬🇧"
       }
     },
     methods: {
-      changeLan(){
-        if(this.lang){
-          this.currentLan=this.datos.data.eng;
-          this.lang=false;
-          return this.currentLan;
-        }else{
-          this.currentLan=this.datos.data.esp;
+      changeLang(){
+        if(!this.lang){
+          this.currentLang=this.datos.data.eng;
           this.lang=true;
-          return this.currentLan;
+          this.flagLang="🇬🇧";
+          return this.currentLang;
+        }else{
+          this.currentLang=this.datos.data.esp;
+          this.lang=false;
+          this.flagLang="🇪🇸";
+          return this.currentLang;
         }
-      }
+      },
     },
     computed: {
 
@@ -105,5 +112,13 @@ h1{
   justify-content:center;
   flex-direction:column;
   }
+.changeMe{
+  border: 4px #546a7b solid;
+  width:110px;
+  display:flex;
+  align-items:center;
+  border-radius:20px;
+  height:45px;
+}
 
 </style>
