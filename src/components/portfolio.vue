@@ -16,7 +16,17 @@
             <h4>Birthday: {{currentLang.aboutMe.dateBirth}} </h4>
             <h4>Where: {{currentLang.aboutMe.nationallity}}</h4>
             <h4>Mother Language: {{currentLang.languages.motherLanguage}}</h4>
+            <b-progress :max=100 height="2rem">
+              <b-progress-bar :value="currentLang.languages.barSpa">
+                <span><strong>{{currentLang.languages.motherLanguage}}: {{currentLang.languages.barSpa}} / 100</strong></span>
+            </b-progress-bar>
+            </b-progress>
             <h4>Other Language: {{currentLang.languages.otherLanguage}}</h4>
+            <b-progress :max=100 height="2rem">
+              <b-progress-bar :value="currentLang.languages.barEng">
+                <span><strong>{{currentLang.languages.otherLanguage}}: {{currentLang.languages.barEng}} / 100</strong></span>
+            </b-progress-bar>
+            </b-progress>
           </b-col>
         </b-row>
 
@@ -41,22 +51,57 @@
       </div>
       <div id="projects"> 
       <h2>Projects</h2>
+
+
+
+
+
+      <!-- START MODALS-->
+      <!-- <div v-for="i in 3" :key="i">
+        <b-btn v-b-modal="modalId(i)">Launch demo modal</b-btn>
+        <b-modal :id="'modal' + i" title="Bootstrap-Vue">
+          <p clas="my-4">Hello from modal {{ i }}!</p>
+        </b-modal>
+      </div> -->
+      <!-- END MODALS-->
+
+
+
+
+
       <div class="d-flex justify-content-center flex-wrap align-items-stretch" fluid="md"> 
+      
       <b-card v-for="(item, index) in currentLang.projects" :key="index" class="myProjects mx-5 my-5">
         <a v-bind:href="item.url" :title="item.name" target="_blank" v-b-tooltip.hover> 
           <h3 class="nameProject">{{item.name}}</h3>
           <img v-bind:src="item.img" class="img-fluid imgProjects my-3 mx-auto d-block">
           <p class="descProject mx-auto">{{item.description}}</p>
+          
         </a>
-        </b-card>
-      </div> 
+
+
+        <!-- IMPLEMENTACION DE MODALS-->
+        <b-btn v-b-modal="modalId(index)">{{item.name}}</b-btn>
+        <b-modal :id="'modal' + index" v-bind:title=item.name>
+          <p clas="my-4">Hello from modal {{index}}!</p>
+        </b-modal>
+
+
+      </b-card>
+      </div>
+      <div class="botSections"></div>
       </div>
       <div id="skills">
-        
-         <h1>Fotomia</h1> 
+        <h1>Fotomia</h1>
       </div>
-      <div id="work"> <h1>Fotomia</h1> </div>
-      <div id="education"> <h1>Fotomia</h1> </div>
+      <div id="work"> 
+        <h1>Fotomia</h1> 
+        
+      </div>
+      <div id="education"> 
+        <h1>Fotomia</h1> 
+        
+      </div>
   </section>
 </template>
 
@@ -80,6 +125,9 @@
       }
     },
     methods: {
+      modalId(i) {
+        return 'modal' + i;
+      },
       changeLang(){
         if(!this.lang){
           this.currentLang=this.datos.data.eng;
@@ -125,7 +173,7 @@
   height:100vh;
   background-color:#7C91A2;
 }
-/* whoami section */
+/* START whoami section */
 .photo{
   border-radius:100%;
   border: 3px #546a7b solid;
@@ -139,7 +187,14 @@ h1{
   justify-content:center;
   flex-direction:column;
 }
-
+.progress{
+  width:260px;
+}
+.progress-bar{
+  color:#E7EBEE !important;
+  background-color:#425461 !important;
+}
+/* END whoami section */
 /* STYLES FOR FONTAWESOME ICONS */
 .iconWeb{
   color: #3A4955;
