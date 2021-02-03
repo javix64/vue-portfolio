@@ -91,16 +91,59 @@
       </div>
       <div class="botSections"></div>
       </div>
-      <div id="skills">
-        <h1>Fotomia</h1>
+      <div id="skills" fluid>
+        <h2>Skills</h2>
+        <b-container >
+          <b-row> 
+            <b-col>
+              <h3>Digital Skills</h3>
+              <section class="sk d-flex flex-wrap col-md-12 col-12"> 
+                <b-card v-for="(item, index) in currentLang.digitalSkills" :key="index" class="skills my-2 mx-auto"> 
+                <p>{{item}}</p>
+                </b-card> 
+              </section>
+            </b-col>
+
+            <b-col>
+                <h3 class=""> Other Skills</h3>
+                <section class="sk d-flex flex-wrap col-md-12 col-12"> 
+                <b-card v-for="(item, index) in currentLang.otherSkills" :key="index" class="skills my-2 mx-auto"> 
+                <p>{{item}}</p>
+                </b-card>
+                </section>
+            </b-col>
+        </b-row>
+
+        </b-container>
+        <div class="botSections"> </div>
       </div>
       <div id="work"> 
-        <h1>Fotomia</h1> 
-        
+        <h2> Work </h2> 
+        <section class="d-flex flex-wrap justify-content-center" fluid> 
+          <b-card v-for="(item, index) in currentLang.workExperience" :key="index" class="cardWork mx-3 my-3" fluid=lg>
+          <b-media>
+          <h5>{{item.work}}</h5>
+          <p>From: {{item.dateStart}}, to: {{item.dateEnd}}</p>
+          <p>Place: {{item.place}} </p>
+          <p>Position: {{item.position}}</p>
+          <p>Description: {{item.description}}</p>
+          </b-media>
+          </b-card>
+        </section>
+
+        <div class="botSections"> </div>
       </div>
       <div id="education"> 
-        <h1>Fotomia</h1> 
-        
+        <h2 class="eduName">Education</h2> 
+        <div class="tabli d-flex text-center mx-auto pt-4">
+          <b-table hover :items="currentLang.education" striped bordered dark></b-table>
+        </div>
+      </div>
+      <div id="other"> 
+        <h2 class="eduName">Education</h2> 
+        <div class="tabli d-flex text-center mx-auto pt-4">
+          <b-table hover :items="currentLang.education" striped bordered dark></b-table>
+        </div>
       </div>
   </section>
 </template>
@@ -162,16 +205,20 @@
   background-color:#C3CDD5;
 }
 #skills{
-  height:100vh;
+  height:100%;
   background-color:#ABB9C4;
 }
 #work{
-  height:100vh;
+  height:100%;
   background-color:#94A5B3;
 }
 #education{
-  height:100vh;
+  height:60vh;
   background-color:#7C91A2;
+}
+#other{
+  height:100%;
+  background-color:#667C8F;
 }
 /* START whoami section */
 .photo{
@@ -217,6 +264,7 @@ h1{
 .myProjects{
   border: 5px #546a7b solid;
   border-radius:10px;
+  width:400px;
 }
 #projects > h2{
   text-align:center;
@@ -241,9 +289,59 @@ h1{
   color:#2A343C;
 
 }
+/*END projects section */
+
+/*START education section */
+.tabli{
+  width:60%;
+  color:white;
+}
+.eduName{
+  text-align:center;
+  padding-top:40px;
+}
+/*END education section */
+
+/*START skill section */
+#skills > h2{
+  text-align:center;
+  padding-top:30px;
+  padding-bottom:40px;
+}
+.skills{
+  width:200px;
+  height:130px;
+  border-radius:20px;
+  background-color: #F3F5F7;
+  color: #2A343C;
+  text-align: center;
+}
+.sk{
+  border: 2px #f3f5f7 solid;
+  border-radius:30px;
+}
+.col > h3{
+  text-align:center;
+  padding-bottom:20px;
+  padding-top:20px;
+}
+
+
+/*END skill section */
 
 
 
+
+/*START work section */
+#work > h2{
+  padding-top:50px;
+  text-align:center;
+  padding-bottom:50px;
+}
+.cardWork{
+  width:300px;
+}
+/*END work section */
 
 
 
