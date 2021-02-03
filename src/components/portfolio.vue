@@ -1,5 +1,8 @@
 <template lang="html">
   <section class="portfolio">
+  <transition name="fade">
+    hola
+  </transition>
       <div class="changeMe fixed-top ml-auto" v-on:click="changeLang">
         <b-form-checkbox v-model="lang" @change="changeLang" class="ml-auto mr-3" name="check-button" switch size="lg">
           <b class="flag">{{flagLang}}</b>
@@ -13,15 +16,15 @@
           </b-col>
           <b-col class="datosPersonales mt-5 col-12 col-md-6" >
             <h1 class="align-middle">{{currentLang.aboutMe.nombre}} {{currentLang.aboutMe.apellidos}} </h1>
-            <h4>Birthday: {{currentLang.aboutMe.dateBirth}} </h4>
-            <h4>Where: {{currentLang.aboutMe.nationallity}}</h4>
-            <h4>Mother Language: {{currentLang.languages.motherLanguage}}</h4>
+            <h4>{{tagLang.all.birthday}}: {{currentLang.aboutMe.dateBirth}} </h4>
+            <h4>{{tagLang.all.where}}: {{currentLang.aboutMe.nationallity}}</h4>
+            <h4>{{tagLang.all.motherLanguage}}: {{currentLang.languages.motherLanguage}}</h4>
             <b-progress :max=100 height="2rem">
               <b-progress-bar :value="currentLang.languages.barSpa">
                 <span><strong>{{currentLang.languages.motherLanguage}}: {{currentLang.languages.barSpa}} / 100</strong></span>
             </b-progress-bar>
             </b-progress>
-            <h4>Other Language: {{currentLang.languages.otherLanguage}}</h4>
+            <h4>{{tagLang.all.otherLanguage}}: {{currentLang.languages.otherLanguage}}</h4>
             <b-progress :max=100 height="2rem">
               <b-progress-bar :value="currentLang.languages.barEng">
                 <span><strong>{{currentLang.languages.otherLanguage}}: {{currentLang.languages.barEng}} / 100</strong></span>
@@ -41,7 +44,7 @@
             </h4>
           </b-col>
           <b-col class=" rowi mt-5 col-12 col-md-6">
-            <h3> Contact:</h3>
+            <h3> {{tagLang.all.contact}}:</h3>
             <a v-bind:href=" `mailto:${currentLang.contact.email}`"><h4> {{currentLang.contact.email}}</h4></a>
             <h4> {{currentLang.contact.direccion}}</h4>
           </b-col>
@@ -50,53 +53,34 @@
       </b-container>
       </div>
       <div id="projects"> 
-      <h2>Projects</h2>
+      <h2>{{tagLang.all.projects}}</h2>
 
-
-
-
-
-      <!-- START MODALS-->
-      <!-- <div v-for="i in 3" :key="i">
-        <b-btn v-b-modal="modalId(i)">Launch demo modal</b-btn>
-        <b-modal :id="'modal' + i" title="Bootstrap-Vue">
-          <p clas="my-4">Hello from modal {{ i }}!</p>
-        </b-modal>
-      </div> -->
-      <!-- END MODALS-->
-
-
-
-
-
-      <div class="d-flex justify-content-center flex-wrap align-items-stretch" fluid="md"> 
-      
+      <div class="d-flex justify-content-center flex-wrap align-items-stretch" fluid="md">
       <b-card v-for="(item, index) in currentLang.projects" :key="index" class="myProjects mx-5 my-5">
-        <a v-bind:href="item.url" :title="item.name" target="_blank" v-b-tooltip.hover> 
+        
+        
+          <h3 class="nameProject">{{item.name}}</h3>
+          <img v-bind:src="item.img" class="img-fluid imgProjects my-3 mx-auto d-block">
+        <!-- IMPLEMENTACION DE MODALS-->
+        <b-btn v-b-modal="modalId(index)" class="midButton">{{item.name}}</b-btn>
+        <b-modal :id="'modal' + index" v-bind:title="item.name" ok-only>
           <h3 class="nameProject">{{item.name}}</h3>
           <img v-bind:src="item.img" class="img-fluid imgProjects my-3 mx-auto d-block">
           <p class="descProject mx-auto">{{item.description}}</p>
-          
-        </a>
-
-
-        <!-- IMPLEMENTACION DE MODALS-->
-        <b-btn v-b-modal="modalId(index)">{{item.name}}</b-btn>
-        <b-modal :id="'modal' + index" v-bind:title=item.name>
-          <p clas="my-4">Hello from modal {{index}}!</p>
+          <b-button v-bind:href="item.url" :title="item.name" target="_blank" v-b-tooltip.hover class="midButton">Open project</b-button>
         </b-modal>
-
-
       </b-card>
       </div>
+
       <div class="botSections"></div>
       </div>
       <div id="skills" fluid>
-        <h2>Skills</h2>
+        <h2>{{tagLang.all.skills}}</h2>
+        
         <b-container >
           <b-row> 
             <b-col>
-              <h3>Digital Skills</h3>
+              <h3>{{tagLang.all.dSkills}}</h3>
               <section class="sk d-flex flex-wrap col-md-12 col-12"> 
                 <b-card v-for="(item, index) in currentLang.digitalSkills" :key="index" class="skills my-2 mx-auto"> 
                 <p>{{item}}</p>
@@ -105,7 +89,7 @@
             </b-col>
 
             <b-col>
-                <h3 class=""> Other Skills</h3>
+                <h3 class="">{{tagLang.all.oSkills}}</h3>
                 <section class="sk d-flex flex-wrap col-md-12 col-12"> 
                 <b-card v-for="(item, index) in currentLang.otherSkills" :key="index" class="skills my-2 mx-auto"> 
                 <p>{{item}}</p>
@@ -118,15 +102,15 @@
         <div class="botSections"> </div>
       </div>
       <div id="work"> 
-        <h2> Work </h2> 
+        <h2> {{tagLang.all.work}} </h2> 
         <section class="d-flex flex-wrap justify-content-center" fluid> 
           <b-card v-for="(item, index) in currentLang.workExperience" :key="index" class="cardWork mx-3 my-3" fluid=lg>
           <b-media>
           <h5>{{item.work}}</h5>
-          <p>From: {{item.dateStart}}, to: {{item.dateEnd}}</p>
-          <p>Place: {{item.place}} </p>
-          <p>Position: {{item.position}}</p>
-          <p>Description: {{item.description}}</p>
+          <p>{{tagLang.all.from}}: {{item.dateStart}}, {{tagLang.all.to}}: {{item.dateEnd}}</p>
+          <p>{{tagLang.all.place}}: {{item.place}} </p>
+          <p>{{tagLang.all.position}}: {{item.position}}</p>
+          <p>{{tagLang.all.description}}: {{item.description}}</p>
           </b-media>
           </b-card>
         </section>
@@ -134,16 +118,41 @@
         <div class="botSections"> </div>
       </div>
       <div id="education"> 
-        <h2 class="eduName">Education</h2> 
+        <h2 class="eduName">{{tagLang.all.education}}</h2> 
         <div class="tabli d-flex text-center mx-auto pt-4">
           <b-table hover :items="currentLang.education" striped bordered dark></b-table>
         </div>
       </div>
       <div id="other"> 
-        <h2 class="eduName">Education</h2> 
-        <div class="tabli d-flex text-center mx-auto pt-4">
-          <b-table hover :items="currentLang.education" striped bordered dark></b-table>
-        </div>
+        <h2 class="eduName">{{tagLang.all.rrc}}</h2> 
+        <section class="d-flex flex-wrap justify-content-center" fluid> 
+          <b-card v-for="(item, index) in currentLang.references" :key="index" class="cardWork mx-3 my-3" fluid=lg>
+          <b-media>
+            
+          <h5 class="mid" v-b-toggle.openAll>{{item.person}}</h5>
+          <b-collapse id="openAll" class="mt-2">
+          <p id="collapse-1">{{item.reference}}</p>
+          </b-collapse>
+          </b-media>
+          </b-card>
+        </section>
+        <section>
+          <b-form class="d-flex mx-auto justify-content-center flex-column">
+            <b-form-group :label="tagLang.all.name">
+            <b-form-input type="text" :placeholder="tagLang.all.iname" required></b-form-input>
+          </b-form-group>
+          <b-form-group id="input-group-1" :label="tagLang.all.email">
+            <b-form-input type="email" :placeholder="tagLang.all.iemail" required></b-form-input>
+          </b-form-group>
+
+          
+          <b-form-group :label="tagLang.all.message">
+            <b-form-input type="text" :placeholder="tagLang.all.imessage" required></b-form-input>
+          </b-form-group>
+          <b-button type="submit" variant="primary">{{tagLang.all.send}}</b-button>
+    </b-form>
+        </section>
+        <div class="botSections"> </div>
       </div>
   </section>
 </template>
@@ -156,15 +165,17 @@
     async mounted(){
     {this.datos = await axios.get(this.url)}
     this.currentLang=this.datos.data.eng;
-    
+    this.tagLang=this.datos.data.tagEng;
     },
     data () {
       return {
         url:'/json/info.json',
         datos:null,
         currentLang:null,
+        tagLang:null,
         lang:true,
-        flagLang:"🇬🇧"
+        flagLang:"🇬🇧",
+        show:true
       }
     },
     methods: {
@@ -174,11 +185,13 @@
       changeLang(){
         if(!this.lang){
           this.currentLang=this.datos.data.eng;
+          this.tagLang=this.datos.data.tagEng;
           this.lang=true;
           this.flagLang="🇬🇧";
           return this.currentLang;
         }else{
           this.currentLang=this.datos.data.esp;
+          this.tagLang=this.datos.data.tagEsp;
           this.lang=false;
           this.flagLang="🇪🇸";
           return this.currentLang;
@@ -343,6 +356,36 @@ h1{
 }
 /*END work section */
 
+/*START other section */
+.mid{
+  text-align:center;
+}
+form{
+  width:80%;
+  padding-top:100px;
+  padding-bottom:100px;
+}
+input:focus:invalid{
+   border-color: rgba(255,0,0,0.3);
+   background-color: rgba(255,0,0,0.3);
+}
+input:valid{
+   border-color: rgba(0,255,0,0.3);
+   background-color: rgba(0,255,0,0.3);
+}
+/*END other section */
+
+/*START animations */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+
+/*END animations */
+
 
 
 
@@ -365,5 +408,13 @@ h1{
 .flag{
   font-size:1.4rem;
 }
-
+button{
+  background-color:#3a4955;
+}
+.midButton{
+  display:block;
+  width:60%;
+  margin:auto !important;
+  margin-top:20px;
+}
 </style>

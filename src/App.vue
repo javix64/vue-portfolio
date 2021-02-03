@@ -16,6 +16,7 @@ export default {
   },
   data(){
     return{
+      postilla:"esto no es una patata"
     }
   },
   computed: {
