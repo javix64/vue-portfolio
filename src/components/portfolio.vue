@@ -1,5 +1,5 @@
 <template lang="html">
-  <section class="portfolio">
+  <section class="portfolio" v-if="currentLang">
   <transition name="fade">
     hola
   </transition>
@@ -169,13 +169,13 @@
     },
     data () {
       return {
-        url:'/json/info.json',
+        url:'./json/info.json',
         datos:null,
         currentLang:null,
         tagLang:null,
         lang:true,
         flagLang:"🇬🇧",
-        show:true
+        show:true,
       }
     },
     methods: {
