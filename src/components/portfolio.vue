@@ -1,8 +1,5 @@
 <template lang="html">
   <section class="portfolio" v-if="currentLang">
-  <transition name="fade">
-    hola
-  </transition>
       <div class="changeMe fixed-top ml-auto" v-on:click="changeLang">
         <b-form-checkbox v-model="lang" @change="changeLang" class="ml-auto mr-3" name="check-button" switch size="lg">
           <b class="flag">{{flagLang}}</b>
@@ -157,7 +154,17 @@
   </section>
 </template>
 
+
+
+
 <script lang="js">
+/* 
+<transition name="fade">
+   aquí dentro va todo en un container que tiene v-if con tu variable con los datos del json
+</transition>
+
+y esto en la parte de estilos
+tan cual copiado de vuejs.org lo he puesto yo xddd */
   import axios from 'axios';
   export default  {
     name: 'portfolio',
@@ -175,12 +182,14 @@
         tagLang:null,
         lang:true,
         flagLang:"🇬🇧",
-        show:true,
       }
     },
     methods: {
       modalId(i) {
         return 'modal' + i;
+      },
+      showSvg(){
+
       },
       changeLang(){
         if(!this.lang){
@@ -189,6 +198,7 @@
           this.lang=true;
           this.flagLang="🇬🇧";
           return this.currentLang;
+          
         }else{
           this.currentLang=this.datos.data.esp;
           this.tagLang=this.datos.data.tagEsp;
@@ -377,11 +387,13 @@ input:valid{
 
 /*START animations */
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity 2s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+  
 }
+
 
 
 /*END animations */
