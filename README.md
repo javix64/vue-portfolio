@@ -20,7 +20,7 @@ More than 30h.
 
 ![image Wakatime](goodPortfolio.png)
 
-[wakatime url]([https://link](https://wakatime.com/@8c413fb3-2356-4d3d-acf6-fbe71e974e55/projects/uixdcxcmxb?start=2021-01-30&end=2021-02-05))
+[wakatime url](https://wakatime.com/@8c413fb3-2356-4d3d-acf6-fbe71e974e55/projects/uixdcxcmxb?start=2021-01-30&end=2021-02-05)
 
 
 
