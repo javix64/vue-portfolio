@@ -1,4 +1,25 @@
-# goodportfolio
+# Good Portfolio
+This is my portfolio project, made in [Vue.js](https://vuejs.org/).
+
+I have used:
+- Vue JS
+- BootStrap
+- BootStrap-Vue
+- Axios
+- FontAwesome
+
+## Wakatime
+More than 30h.
+
+![image Wakatime](goodPortfolio.png)
+
+[wakatime url]([https://link](https://wakatime.com/@8c413fb3-2356-4d3d-acf6-fbe71e974e55/projects/uixdcxcmxb?start=2021-01-30&end=2021-02-05))
+
+## Web Production
+
+
+
+# Steps
 
 ## Project setup
 ```

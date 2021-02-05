@@ -1,0 +1,401 @@
+{
+    "eng":{
+        "aboutMe":{
+            "nombre": "Javier",
+            "apellidos": "H.M.",
+            "dateBirth": " 04/07/1991",
+            "nationallity": "Spain",
+            "photo":"img/portfolioPhoto.jpg"
+        },
+        "contact":{
+            "direccion": "Granada",
+            "email": "jav1.x64@gmail.com"
+        },
+        "websites":{
+            "github":"https://github.com/javix64/",
+            "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
+            "twitter":"https://twitter.com/Javix64",
+            "twitch":"https://www.twitch.tv/javix64"
+        },
+        "languages":{
+            "motherLanguage":"Spanish",
+            "barSpa":120,
+            "otherLanguage":"English",
+            "barEng":64
+        },
+        "digitalSkills":[
+            "Python",
+            "Java",
+            "Big Data",
+            "Web Scraping",
+            "Data analytics and data mining",
+            "Web Development HTML 5 CSS JavaScript",
+            "Wordpress",
+            "WooCommerce",
+            "Yoast SEO",
+            "SEO Copywriting",
+            "Arch Linux",
+            "Arduino, ESP8266 and RaspBerry Pi",
+            "3D Printing",
+            "NFC",
+            "GIT"
+        ],
+        "otherSkills":[
+            "Disruptive",
+            "Good listener and communicator",
+            "empathic",
+            "handsome",
+            "Honest",
+            "Competitive spirit",
+            "Adaptability",
+            "Public speaking",
+            "Responsible",
+            "Discipline",
+            "Loyalty",
+            "Negotiation skills",
+            "Kind",
+            "Trustworthy",
+            "Leadership",
+            "Punctuality",
+            "Humility",
+            "Imagination",
+            "Resilience",
+            "Charisma",
+            "Courage",
+            "Attitude",
+            "Sincerity"
+        ],
+        "workExperience":[
+            {"work":"Sweet TakeOff S.L.",
+            "position":"Store clerk",
+            "dateStart":"02/10/2015",
+            "dateEnd":"16/04/2016",
+            "description":"This shop was a mobile phone shop. My main activity was sell contracts from internet companies (Vodafone, Orange, Movistar, MasMovil...). Iwas also selling phones , accesories..",
+            "place":"Granada"},
+
+            {"work":"MiBinca S.A.",
+            "position":"Croupier and recepcionist",
+            "dateStart":"16/04/2016",
+            "dateEnd":"09/10/2017",
+            "description":"I was working in a Bingo hall. First i started in reception, allowing ordenying the access of public to the room. Then i continue like croupier,handing out bingo cartons.",
+            "place":"Granada"},
+
+            {"work":"Montezzito S.L.",
+            "position":"Waiter",
+            "dateStart":"06/06/2019",
+            "dateEnd":"31/08/2019",
+            "description":"-",
+            "place":"Granada"},
+
+            {"work":"Athisa",
+            "position":"Pest management worker",
+            "dateStart":"04/08/2020",
+            "dateEnd":"14/08/2020",
+            "description":"-",
+            "place":"Granada"}
+        ],
+        "education":[
+            {"name":"I.E.S. Padre Suarez",
+            "dateStart":"15/09/2018",
+            "dateEnd":"01/05/2019"
+            },
+            {"name":"I.O.T. for business. Create your business in the digital age",
+            "dateStart":"01/05/2019",
+            "dateEnd":"12/07/2019"
+            },
+            {"name":"W.A.D. (Web Application Development)",
+            "dateStart":"15/09/2019",
+            "dateEnd":"-"
+            }
+        ],
+        "projects":[
+            {"name":"Jquery LandingPage",
+            "img":"img/projects/project1.png",
+            "url":"https://github.com/javix64/landingPage-Jquery",
+            "description":"LandingPage made with Jquery"
+            },
+            {"name":"Quote post in ForoCoches",
+            "img":"img/projects/project2.png",
+            "url":"https://github.com/javix64/Mencionar-post-forocoches",
+            "description":"Script made in python to quote all users in a post"
+            },
+            {"name":"API project - FoodJS",
+            "img":"img/projects/project3.png",
+            "url":"https://github.com/javix64/Food-JS",
+            "description":"Project to use fetch with Food Facts API"
+            },
+            {"name":"Download files from Telegram",
+            "img":"img/projects/project4.png",
+            "url":"https://github.com/javix64/Download-files-from-Telegram",
+            "description":"Easy script (not mine) that it can allow you to download files from a group or channel"
+            },
+            {"name":"Web scraping for Milanuncios.com",
+            "img":"img/projects/project5.png",
+            "url":"https://github.com/javix64/Scraping-Milanuncios",
+            "description":"Web scraping made in Python that use selenium for category 'smartphone'"
+            },
+            {"name":"Web scraping for Vinted",
+            "img":"img/projects/project6.png",
+            "url":"https://github.com/javix64/web_scraping_vinted2.0",
+            "description":"Web scraping made in Python that scrap JSON in vinted. ey @vinted you have a security breach in your website"
+            },
+            {"name":"Generate Wordpress script (Unfinished)",
+            "img":"img/projects/project7.png",
+            "url":"https://github.com/javix64/generate-Wordpress-script",
+            "description":"Script for auto Install WordPress This script create a new folder where install wordpress, create the DDBB and after configure wp-config.php with your DDBB credentials."
+            },
+            {"name":"Generate text RGPD",
+            "img":"img/projects/project8.png",
+            "url":"https://github.com/javix64/GenerateRGPD",
+            "description":"this is a RGPD generator for privacy policiy, legal disclaimer, and cookie policy."
+            },
+            {"name":"All my repositories",
+            "img":"img/projects/project9.png",
+            "url":"https://github.com/javix64?tab=repositories",
+            "description":"All my repositories"
+            }
+        ],
+        "references":[
+            {"person":"Rafael",
+            "reference":"Javi is a good boy. What bad am I going to say if he is my son"},
+            {"person":"Susana",
+            "reference":"Javi is an excellent person. What bad am I going to say if he is my son"},
+            {"person":"Ian",
+            "reference":"My older brother, I love him very much."},
+            {"person":"Miguel Ángel",
+            "reference":"Javi is disruptive and unique"},
+            {"person":"Ángel",
+            "reference":"Occasionally he needs a slap on the wrist, but he is persistent in what he likes."},
+            {"person":"Lope",
+            "reference":"I have known him since we were 16 years old and he still has an enthusiastic spirit."}
+        ]
+    },
+    "esp":{
+        "aboutMe":{
+            "nombre": "Javier",
+            "apellidos": "H.M.",
+            "dateBirth": " 04/07/1991",
+            "nationallity": "España",
+            "photo":"img/portfolioPhoto.jpg"
+        },
+        "contact":{
+            "direccion": "Granada",
+            "email": "jav1.x64@gmail.com",
+            "phone" : 666112233
+        },
+        "websites":{
+            "github":"https://github.com/javix64/",
+            "linkedin":"https://www.linkedin.com/in/javier-heredia-molero-6bb0261aa/",
+            "twitter":"https://twitter.com/Javix64",
+            "twitch":"https://www.twitch.tv/javix64"
+        },
+        "languages":{
+            "motherLanguage":"Español",
+            "barSpa":120,
+            "otherLanguage":"Inglés",
+            "barEng":64
+        },
+        "digitalSkills":[
+            "Python",
+            "Java",
+            "Big Data",
+            "Web Scraping",
+            "Análisis y minado de datos",
+            "Desarrollo web HTML5, CSS3 y JS",
+            "Wordpress",
+            "WooCommerce",
+            "Yoast SEO",
+            "SEO Copywriting",
+            "Arch Linux",
+            "Arduino, ESP8266 and RaspBerry Pi",
+            "3D Printing",
+            "NFC"
+        ],
+        "otherSkills":[
+            "Disruptivo",
+            "Buen comunicador",
+            "empático",
+            "guapo",
+            "Honesto",
+            "Espíritu competitivo",
+            "Adaptabilidad",
+            "Oratoria",
+            "Responsable",
+            "Disciplina",
+            "Lealtad",
+            "Capacidad de negociación",
+            "Amable",
+            "Confianza",
+            "Liderazgo",
+            "Puntualidad",
+            "Humildad",
+            "Imaginación",
+            "Resiliencia",
+            "Carisma",
+            "Valentía",
+            "Actitud",
+            "Sinceridad"
+
+        ],
+        "workExperience":[
+            {"work":"Sweet TakeOff S.L.",
+            "position":"Dependiente",
+            "dateStart":"02/10/2015",
+            "dateEnd":"16/04/2016",
+            "description":"Esta era una tienda de smartphones. Mi principal tarea era vender contratos de las compañías de fibra internet(Vodafone, Orange, MasMovil,Movistar...). Además también vendía smartphones, accesorios...",
+            "place":"Granada"},
+
+            {"work":"MiBinca S.A.",
+            "position":"Recepcionista y croupier",
+            "dateStart":"16/04/2016",
+            "dateEnd":"09/10/2017",
+            "description":"Estuve trabajando en un bingo. Primero trabajé de recepcionista, permitiendo o no el acceso a la sala del público. Después estuve trabajando de cropuier repartiendo cartones de bingo.",
+            "place":"Granada"},
+
+            {"work":"Montezzito S.L.",
+            "position":"Camarero",
+            "dateStart":"06/06/2019",
+            "dateEnd":"31/08/2019",
+            "description":"-",
+            "place":"Granada"},
+
+            {"work":"Athisa",
+            "position":"Erradicador de plagas",
+            "dateStart":"04/08/2020",
+            "dateEnd":"14/08/2020",
+            "description":"-",
+            "place":"Granada"}
+        ],
+        "education":[
+            {"name":"I.E.S. Padre Suarez",
+            "dateStart":"15/09/2018",
+            "dateEnd":"01/05/2019"
+            },
+            {"name":"I.O.T. para negocios. Crea tu negocio en la era digital",
+            "dateStart":"01/05/2019",
+            "dateEnd":"12/07/2019"
+            },
+            {"name":"D.A.W. (Desarrollo de Aplicaciones Web)",
+            "dateStart":"15/09/2019",
+            "dateEnd":"-"
+            }
+        ],
+        "projects":[
+            {"name":"Jquery LandingPage",
+                "img":"img/projects/project1.png",
+                "url":"https://github.com/javix64/landingPage-Jquery",
+                "description":"LandingPage hecha con Jquery"
+                },
+                {"name":"Citar usuarios post en ForoCoches",
+                "img":"img/projects/project2.png",
+                "url":"https://github.com/javix64/Mencionar-post-forocoches",
+                "description":"Script realizado en python para citar a todos los usuarios de un post"
+                },
+                {"name":"API project - FoodJS",
+                "img":"img/projects/project3.png",
+                "url":"https://github.com/javix64/Food-JS",
+                "description":"Proyecto para hacer peticiones fetch a Food Facts API"
+                },
+                {"name":"Descargar archivos de telegram",
+                "img":"img/projects/project4.png",
+                "url":"https://github.com/javix64/Download-files-from-Telegram",
+                "description":"Te permite descargar todos los archivos de un grupo o canal"
+                },
+                {"name":"Web scraping para Milanuncios.com",
+                "img":"img/projects/project5.png",
+                "url":"https://github.com/javix64/Scraping-Milanuncios",
+                "description":"Web scraping hecho en python que scrapea la categoria 'smartphone'"
+                },
+                {"name":"Web scraping para Vinted",
+                "img":"img/projects/project6.png",
+                "url":"https://github.com/javix64/web_scraping_vinted2.0",
+                "description":"Web scraping hecho en python que scrapea el JSON de vinted. Ey @vinted, tienes una brecha de seguridad en tu web."
+                },
+                {"name":"Generador de Wordpress script (Sin acabar)",
+                "img":"img/projects/project7.png",
+                "url":"https://github.com/javix64/generate-Wordpress-script",
+                "description":"Script que te permite crear carpetas y configurar wp-config de wordpress"
+                },
+                {"name":"Generador de textos RGPD",
+                "img":"img/projects/project8.png",
+                "url":"https://github.com/javix64/GenerateRGPD",
+                "description":"Generador de políticas de cookies, aviso legal y políticas de privacidad"
+                },
+                {"name":"Mis repositorios",
+                "img":"img/projects/project9.png",
+                "url":"https://github.com/javix64?tab=repositories",
+                "description":"Link para verlos"
+                }
+        ],
+        "references":[
+            {"person":"Rafael",
+            "reference":"Javi es un buen chico. Qué malo voy a decir si es mi hijo."},
+            {"person":"Susana",
+            "reference":"Javi es una persona excelente. Qué malo voy a decir si es mi hijo."},
+            {"person":"Ian",
+            "reference":"Mi hermano mayor, lo quiero mucho."},
+            {"person":"Miguel Ángel",
+            "reference":"Javi es disruptivo y unico."},
+            {"person":"Ángel",
+            "reference":"De vez en cuando le hace falta un tirón de orejas, pero es persistente en lo que le gusta."},
+            {"person":"Lope",
+            "reference":"Llevo conociéndolo desde que teníamos 16 años y sigue teniendo un espiritu entusiasta."}
+        ]
+        },
+    "tagEng":{
+        "all":{
+            "birthday":"Birthday",
+            "where":"Where",
+            "motherLanguage":"Mother Language",
+            "otherLanguage":"Other Language",
+            "contact":"Contact",
+            "projects":"Projects",
+            "skills":"Skills",
+            "dSkills":"Digital Skills",
+            "oSkills":"Other Skills",
+            "work":"Work",
+            "from":"from",
+            "to":"to",
+            "place":"Place",
+            "position":"Position",
+            "description":"Description",
+            "education":"Education",
+            "rrc":"References and Contact",
+            "name":"Your name",
+            "iname":"Enter your name:",
+            "email":"Email address:",
+            "iemail":"Enter your email",
+            "message":"Your message:",
+            "imessage":"Write your message",
+            "send":"Send"
+        }
+    },
+    "tagEsp":{
+        "all":{
+            "birthday":"Cumpleaños",
+            "where":"Lugar",
+            "motherLanguage":"Lengua materna",
+            "otherLanguage":"Otras lenguas",
+            "contact":"Contacto",
+            "projects":"Proyectos",
+            "skills":"Habilidades",
+            "dSkills":"Habilidades digitales",
+            "oSkills":"Otras habilidades",
+            "work":"Trabajos realizados",
+            "from":"desde",
+            "to":"hasta",
+            "place":"Lugar",
+            "position":"Cargo",
+            "description":"Descripción",
+            "education":"Educación",
+            "rrc":"Referencias y contacto",
+            "name":"Tu nombre",
+            "iname":"Escribe tu nombre:",
+            "email":"Correo electrónico:",
+            "iemail":"Escribe tu email",
+            "message":"Tu mensajes:",
+            "imessage":"Escribe tu mensaje",
+            "send":"Enviar"
+        }
+    }
+}
