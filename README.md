@@ -8,6 +8,13 @@ I have used:
 - Axios
 - FontAwesome
 
+
+## Web Production
+[Production web]([https://link](https://javix64.github.io/vue-portfolio/dist/))
+
+https://javix64.github.io/vue-portfolio/dist/
+
+
 ## Wakatime
 More than 30h.
 
@@ -15,7 +22,7 @@ More than 30h.
 
 [wakatime url]([https://link](https://wakatime.com/@8c413fb3-2356-4d3d-acf6-fbe71e974e55/projects/uixdcxcmxb?start=2021-01-30&end=2021-02-05))
 
-## Web Production
+
 
 
 
