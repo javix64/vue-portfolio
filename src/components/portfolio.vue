@@ -1,5 +1,9 @@
 <template lang="html">
-  <section class="portfolio" v-if="currentLang">
+  <section class="portfolio">
+    <section v-if="!currentLang">
+      <img :src="chargingSvg">
+    </section>
+    <section  v-if="currentLang">
       <div class="changeMe fixed-top ml-auto" v-on:click="changeLang">
         <b-form-checkbox v-model="lang" @change="changeLang" class="ml-auto mr-3" name="check-button" switch size="lg">
           <b class="flag">{{flagLang}}</b>
@@ -152,6 +156,7 @@
         <div class="botSections"> </div>
       </div>
   </section>
+  </section>
 </template>
 
 
@@ -171,8 +176,11 @@ tan cual copiado de vuejs.org lo he puesto yo xddd */
     props: [],
     async mounted(){
     {this.datos = await axios.get(this.url)}
+    setTimeout(() => {
     this.currentLang=this.datos.data.eng;
     this.tagLang=this.datos.data.tagEng;
+
+    }, 3000);
     },
     data () {
       return {
@@ -182,6 +190,7 @@ tan cual copiado de vuejs.org lo he puesto yo xddd */
         tagLang:null,
         lang:true,
         flagLang:"🇬🇧",
+        chargingSvg:'img/animation.svg'
       }
     },
     methods: {
